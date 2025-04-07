@@ -1,0 +1,21 @@
+[project]
+name = "langgraph-agent"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "IBM Corp." }]
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "acp-sdk", # version determined by beeai-sdk
+    "beeai-sdk==0.0.21",
+    "pydantic>=2.10.6",
+    "langgraph>=0.3.25",
+    "langchain-openai>=0.3.12",
+]
+
+[project.scripts]
+server = "langgraph_agent.server:server"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

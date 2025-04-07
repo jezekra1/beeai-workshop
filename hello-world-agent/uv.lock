@@ -4,7 +4,7 @@ requires-python = ">=3.11, <4.0"
 
 [[package]]
 name = "acp-sdk"
-version = "0.0.5"
+version = "0.0.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -18,9 +18,9 @@ dependencies = [
     { name = "starlette" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c1/13/76af0e28cbfdace93a6eb17be49586ebb4937311bf981112a13bab9ad968/acp_sdk-0.0.5.tar.gz", hash = "sha256:d302c2d088373bf5c5b87ee62836045842e39946664346489a9c9dae5da08cc9", size = 121827 }
+sdist = { url = "https://files.pythonhosted.org/packages/95/6e/632b267d53fe1cb42119ad360958cced60c345a9cdefab99a4bfc4cbb442/acp_sdk-0.0.6.tar.gz", hash = "sha256:9958e869af5129fbb0bb55d0eb524936b9c6c740d90ca59a1d822f810f4aaf8d", size = 121844 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/48/25/2e92bbd0666d4b004faa7ec2e059cceaae22cffe1710e5d0380cd057594b/acp_sdk-0.0.5-py3-none-any.whl", hash = "sha256:5f0608e0b595575efa9273f3615e7c60d7a947b30630db540ba36810b94a0683", size = 69783 },
+    { url = "https://files.pythonhosted.org/packages/27/00/153370d3eacddc9e899d8d4bbc1a16b7199ed24a915c5151fb43e3b195e9/acp_sdk-0.0.6-py3-none-any.whl", hash = "sha256:9f76e9f7a0d5f1df6fead7617d379c5c1cd7d16697cb1e03431f87841f783705", size = 69817 },
 ]
 
 [[package]]
@@ -47,29 +47,8 @@ wheels = [
 ]
 
 [[package]]
-name = "beeai-agents"
-version = "0.1.1"
-source = { editable = "." }
-dependencies = [
-    { name = "acp-sdk" },
-    { name = "beeai-sdk" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
-    { name = "pyyaml" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "acp-sdk" },
-    { name = "beeai-sdk", specifier = "==0.0.18" },
-    { name = "pydantic", specifier = ">=2.10.6" },
-    { name = "pydantic-settings", specifier = ">=2.7.1" },
-    { name = "pyyaml", specifier = ">=6.0.2" },
-]
-
-[[package]]
 name = "beeai-sdk"
-version = "0.0.18"
+version = "0.0.21"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "acp-sdk" },
@@ -78,9 +57,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f2/7b/d140537f5494a7fb73da88cb80eecbef0ade626ecf6b2ab3ba7ca627b86a/beeai_sdk-0.0.18.tar.gz", hash = "sha256:359932d904c66b575740e90a475af32e9d2fe72f993fabc6a746be33b0add288", size = 11805 }
+sdist = { url = "https://files.pythonhosted.org/packages/4b/a6/28458f2ce4c744cb3a50c8bfb0d56577c6a1955874b9b4fd1b33801a7b71/beeai_sdk-0.0.21.tar.gz", hash = "sha256:d16749508e7bbb8f87a1a83c4a6e136921a5863609cd5329f67c09535c0a60b9", size = 12717 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3e/70/b6663ed0062959907256f4b68c06a0fd0df07fde04cb3e18d4485c300aee/beeai_sdk-0.0.18-py3-none-any.whl", hash = "sha256:4bb56c4786ec0059e6b40299ba86e64e6f67aaa9c6900083e98dd89a52b373a8", size = 14660 },
+    { url = "https://files.pythonhosted.org/packages/38/26/de13ef25321d0655f9cfd9b17ac9cfedf50daab1fef0ff09a637eebbbd24/beeai_sdk-0.0.21-py3-none-any.whl", hash = "sha256:629073f80a0afbf67fa389a5224f930453c8f685e34e9051e745467366017aa8", size = 15504 },
 ]
 
 [[package]]
@@ -192,6 +171,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f5/38/3af3d3633a34a3316095b39c8e8fb4853a28a536e55d347bd8d8e9a14b03/h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d", size = 100418 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl", hash = "sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761", size = 58259 },
+]
+
+[[package]]
+name = "hello-world-agent"
+version = "0.1.1"
+source = { editable = "." }
+dependencies = [
+    { name = "acp-sdk" },
+    { name = "beeai-sdk" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "acp-sdk" },
+    { name = "beeai-sdk", specifier = "==0.0.21" },
 ]
 
 [[package]]

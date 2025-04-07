@@ -1,3 +1,12 @@
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/i-am-bee/beeai/master/docs/logo/beeai_logo_white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/i-am-bee/beeai/master/docs/logo/beeai_logo_black.svg">
+    <img alt="BeeAI" src="https://raw.githubusercontent.com/i-am-bee/beeai/master/docs/logo/beeai_logo_black.svg" width="60"><br><br>
+  </picture>
+  BeeAI
+</h1>
+
 # beeai-workshop
 
 ## Quickstart
@@ -59,7 +68,11 @@ You're all set! (You can re-run this setup anytime with beeai env setup)
 
 ### Using agents
 
-Use `beeai run <agent-name>`, to interact with agent, for example
+The beeai platform catalog comes with a bunch of agents out of the box. These are implemented in different frameworks
+(and even programming languages) -- beeai-framework, crewai, langgraph just to name a few! You can interact with
+all of them using a standardized interface and combine them in a workflow.
+
+To interact with an agent, use `beeai run <agent-name>`, for example
 
 ```shell
 beeai run chat
@@ -105,7 +118,8 @@ The current weather in Amsterdam is 14.6°C with a relative humidity of 33% and 
 
 </details>
 
-You can also open the UI and use web interface to chat with agents.
+You can also open the UI and use web interface to chat with agents and get more
+information.
 
 ```shell
 beeai ui
@@ -355,7 +369,7 @@ echo "Explain this licence in simple terms: $(cat LICENSE)" \
 $ git clone https://github.com/jezekra1/beeai-workshop
 
 # Go to example agent directory:
-$ cd beeai-workshop/example-agent
+$ cd beeai-workshop/hello-world-agent
 
 # (Optional) modify your agent in "server.py"
 $ vim src/server.py
@@ -364,7 +378,7 @@ $ vim src/server.py
 $ uv run server
 
 # Use beeai CLI or UI to interact with the agent
-$ beeai run example-agent "Radek"
+$ beeai run hello-world-agent "Radek"
 
 # Profit!
 ```
