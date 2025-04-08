@@ -19,7 +19,7 @@ brew install i-am-bee/beeai/beeai
 # Check that the beeai service started by listing available agents
 # (might take a few minutes)
 
-beeai agent list
+beeai list
 ```
 
 <details>
@@ -47,9 +47,7 @@ sequential-workflow     ready          The agent orchestrates a sequ…  <none> 
 ```shell
 beeai env setup
 
-# Use your preferred provider or Choose *Other*
-# Enter URL: <TBD>
-# Enter API key: <Shown during workshop>
+# Use your preferred LLM provider
 ```
 
 <details>
@@ -470,3 +468,9 @@ You can use the agent through the CLI and UI now and even compose it with other 
 ## Troubleshooting
 
 Try restarting the platform using `brew services restart beeai`.
+
+## More information
+
+Official website: [beeai.dev](https://beeai.dev)  
+GitHub repository: [github.com/i-am-bee/beeai](https://github.com/i-am-bee/beeai)  
+Documentation: [docs.beeai.dev](https://docs.beeai.dev)
