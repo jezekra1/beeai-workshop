@@ -447,3 +447,26 @@ https://community.ibm.com/community/user/blogs/marius-ciortea/2025/03/03/introdu
 ```
 
 </details>
+
+## Extra
+
+### langgraph-agent
+
+You can write agents with any framework of choice. We picked langgraph to showcase how simple writing agent can be
+when using all your favorite features and tools you already know!
+
+You can run the agent using
+
+```shell
+cd langgraph-agent
+uv run server
+```
+
+Modify [langgraph-agent/src/langgraph_agent/server.py](langgraph-agent/src/langgraph_agent/server.py) to extend
+the agent capabilities for example by searching for opening hours and taking weather into consideration.
+
+You can use the agent through the CLI and UI now and even compose it with other agents!
+
+## Troubleshooting
+
+Try restarting the platform using `brew services restart beeai`.
